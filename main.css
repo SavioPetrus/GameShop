@@ -1,28 +1,43 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /*Estilização base do cabeçalho*/
-
-header{
+header {
     padding: 16px 0;
     background-color: #182c61;
     color: #ecf0f1;
 }
 
-/*Organização da lista do cabeçalho*/
-header nav li{
+/*Definição das fontes utilizadas no cabeçalho e nas tags h2 das seções*/
+header,
+section h2 {
+    font-family: "Bungee", cursive;
+}
+
+/*Definição de todas as fontes do corpo HTML a serem usadas*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Estilização do peso das tags h1 e h2 presentes no cabeçalho e nas seções*/
+header h1,
+section h2 {
+    font-weight: normal;
+}
+
+/*Organização da lista do cabeçalho, itens do menu*/
+header nav li {
     display: inline;
     margin-left: 16px;
     color: #ecf0f1;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 /*Estilização dos itens do cabeçalho*/
-header nav li a{
+header nav li a {
     color: #ecf0f1;
     text-decoration: none;
 }
@@ -35,8 +50,50 @@ header nav li a{
 }
 
 /* Posicionamento dos itens contidos no container do cabeçalho*/
-header .container{
+header .container,
+section .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+/*tamanho das imagens do lista de marcas*/
+.brands-list img {
+    height: 24px;
+}
+
+/*Definição de display da lista de marcas e margens*/
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+/*definição do tipo de alinhamento de todo o container das seções*/
+section .container {
+    align-items: flex-start;
+}
+
+/*margem das seções*/
+section {
+    padding: 24px 0;
+}
+
+/*Espaçamento inferior de todas as tags H2 presentes em seções */
+section h2 {
+    margin-bottom: 16px;
+}
+
+/*Definição da cor de todos os textos contidos nas seção*/
+section {
+    color: #182c61;
+}
+
+/*margem dos paragrafos das seções*/
+section p {
+    margin-bottom: 8px;
+}
+
+/*Estilização de margem da imagem da fachada da loja*/
+.store-front {
+    margin-right: 32px;
 }
